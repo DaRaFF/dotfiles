@@ -60,7 +60,8 @@ cask "iterm2"
 cask "lens"
 # cask "licecap"
 # cask "webpquicklook"
+cask "visual-studio-code"
 cask "zoom"
-mas "1Password 7", id: 1333542190
+mas "1Password 7 - Password Manager", id: 1333542190
 mas "Evernote", id: 406056744
 mas "Xcode", id: 497799835
