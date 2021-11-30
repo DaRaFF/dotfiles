@@ -1,0 +1,63 @@
+[core]
+  editor = "code --wait"
+	excludesfile = ~/.gitignore_global
+
+[color]
+    ui = true
+    branch = auto
+    diff = auto
+    status = auto
+
+[merge]
+    tool = vi
+
+[rebase]
+    autosquash = true
+
+[branch]
+    autosetuprebase = always
+
+[diff]
+    tool = meld
+
+[push]
+    default = current
+
+[help]
+    autocorrect = 10
+
+[alias]
+    b = branch
+    co = checkout
+
+    # merge current code changes to last commit
+    # does a commit on current changes and an interactive rebase
+    fix-last-commit = !sh -c 'git commit -a --fixup=HEAD && git rebase --interactive --autosquash HEAD~2'
+
+    # pulls changes of the current branch from remote
+    pullc = !git fetch --all && git pull origin $(git symbolic-ref --short HEAD)
+
+    # force push changes of the current branch to remove
+    pushf = !git push origin $(git symbolic-ref --short HEAD) --force
+
+[user]
+	name = Ralph Meier
+	email = ralphmeier79@gmail.com
+  # TODO: should I add a signing key?
+  # signingkey = 12345
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[pager]
+	branch = false
+
+[url "https://"]
+	insteadOf = git://
