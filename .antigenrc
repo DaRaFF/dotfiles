@@ -1,0 +1,19 @@
+antigen use oh-my-zsh
+
+# default repo bundles
+antigen bundle git
+antigen bundle nvm
+antigen bundle brew
+antigen bundle npm
+antigen bundle docker
+
+# external repo bundles
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle lukechilds/zsh-better-npm-completion
+
+# select theme
+antigen theme agnoster
+
+antigen apply
