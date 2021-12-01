@@ -29,3 +29,8 @@ rm -rf ~/.zshrc && su daraff -c 'ln -s ~/dev/daraff/dotfiles/.zshrc ~/.zshrc'
 rm -rf ~/.antigenrc && su daraff -c 'ln -s ~/dev/daraff/dotfiles/.antigenrc ~/.antigenrc'
 rm -rf ~/.gitconfig && su daraff -c 'ln -s ~/dev/daraff/dotfiles/.gitconfig ~/.gitconfig'
 rm -rf ~/.gitignore_global && su daraff -c 'ln -s ~/dev/daraff/dotfiles/.gitignore_global ~/.gitignore_global'
+
+# vs code
+rm -rf ~/Library/Application\ Support/Code/User/keybindings.json && su daraff -c 'ln -s ~/dev/daraff/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json'
+rm -rf ~/Library/Application\ Support/Code/User/settings.json && su daraff -c 'ln -s ~/dev/daraff/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json'
+rm -rf ~/Library/Application\ Support/Code/User/tasks.json && su daraff -c 'ln -s ~/dev/daraff/dotfiles/vscode/tasks.json ~/Library/Application\ Support/Code/User/tasks.json'
