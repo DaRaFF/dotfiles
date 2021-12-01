@@ -40,6 +40,9 @@
     # force push changes of the current branch to remove
     pushf = !git push origin $(git symbolic-ref --short HEAD) --force
 
+[credential]
+  helper = osxkeychain
+
 [user]
 	name = Ralph Meier
 	email = ralphmeier79@gmail.com
@@ -61,3 +64,6 @@
 
 [url "https://"]
 	insteadOf = git://
+    
+[pull]
+	rebase = true
