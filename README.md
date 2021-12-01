@@ -22,6 +22,8 @@ Actions I did manually (to be maybe automated in the future)
   - password - disable "Offer to save passwords"
 - better touch tool (screen resizing shortcuts)
   - maybe replace it later with hammerspoon actions
+- set iterm2 config folder, e.g. ![image](https://user-images.githubusercontent.com/172394/144226562-c38f232a-3bae-45e5-aafb-ccc36ac77b8d.png)
+
 
 # TODOs
 
