@@ -66,6 +66,7 @@ cask "lens"
 # cask "licecap"
 # cask "webpquicklook"
 cask "slack"
+cask "microsoft-teams"
 cask "visual-studio-code"
 cask "zoom"
 mas "Xcode", id: 497799835

@@ -7,6 +7,7 @@ My dotfiles :-)
 - [Dotfiles Marc Bachmann](https://github.com/marcbachmann/dotfiles)
 - [Brew Bundle and Brewfile Tips](https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f)
 - [zsh + antigen + oh-my-zsh guide](https://phuctm97.com/blog/zsh-antigen-ohmyzsh)
+- [Sublime Keys for VSCode](https://github.com/Microsoft/vscode-sublime-keybindings/blob/main/package.json)
 
 ## Manual
 
@@ -20,4 +21,13 @@ Actions I did manually (to be maybe automated in the future)
 - chrome settings
   - password - disable "Offer to save passwords"
 - better touch tool (screen resizing shortcuts)
-  - maybe replace it later with hammerspoon actions  
+  - maybe replace it later with hammerspoon actions
+
+# TODOs
+
+- vscode settings
+- vscode plugins
+- vscode theme
+- terminal
+  - has strange ?
+  - option backspace / option cursor to navigate
