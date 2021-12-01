@@ -34,6 +34,5 @@ Actions I did manually (to be maybe automated in the future)
 
 # TODOs
 
-- vscode settings
-- vscode plugins
+- lens credentials
 - install menlo font for iterm? https://www.cufonfonts.com/font/menlo
