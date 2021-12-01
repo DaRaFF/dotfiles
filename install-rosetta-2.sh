@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Installs Rosetta as needed on Apple Silicon Macs.
 # https://gist.githubusercontent.com/rtrouton/dd71a3f2bb3c354cc6d035ecce508bd9/raw/bf62f4a5789e7d37a3b2e28a910524f0ff483ae4/install_rosetta_on_apple_silicon.sh
@@ -23,19 +23,19 @@ if [[ ${osvers_major} -ge 11 ]]; then
   # Check to see if the Mac needs Rosetta installed by testing the processor
 
   processor=$(/usr/sbin/sysctl -n machdep.cpu.brand_string | grep -o "Intel")
-  
+
   if [[ -n "$processor" ]]; then
     echo "$processor processor installed. No need to install Rosetta."
   else
 
     # Check for Rosetta "oahd" process. If not found,
     # perform a non-interactive install of Rosetta.
-    
+
     if /usr/bin/pgrep oahd >/dev/null 2>&1; then
         echo "Rosetta is already installed and running. Nothing to do."
     else
         /usr/sbin/softwareupdate --install-rosetta --agree-to-license
-       
+
         if [[ $? -eq 0 ]]; then
         	echo "Rosetta has been successfully installed."
         else

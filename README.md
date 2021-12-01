@@ -30,7 +30,7 @@ Actions I did manually (to be maybe automated in the future)
 - open iterm
 
 ### vs code
-- install and activate color theme: "one dark pro" (Atom‘s iconic One Dark theme for Visual Studio Code)
+- activate color theme: "one dark pro" (Atom‘s iconic One Dark theme for Visual Studio Code)
 
 # TODOs
 
