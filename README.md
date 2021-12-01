@@ -22,14 +22,18 @@ Actions I did manually (to be maybe automated in the future)
   - password - disable "Offer to save passwords"
 - better touch tool (screen resizing shortcuts)
   - maybe replace it later with hammerspoon actions
-- set iterm2 config folder, e.g. ![image](https://user-images.githubusercontent.com/172394/144226562-c38f232a-3bae-45e5-aafb-ccc36ac77b8d.png)
 
+### iterm2
+- set iterm2 config folder, e.g. ![image](https://user-images.githubusercontent.com/172394/144226562-c38f232a-3bae-45e5-aafb-ccc36ac77b8d.png)
+- quit iterm
+- Run defaults read com.googlecode.iterm2
+- open iterm
+
+### vs code
+- install and activate color theme: "one dark pro" (Atom‘s iconic One Dark theme for Visual Studio Code)
 
 # TODOs
 
 - vscode settings
 - vscode plugins
-- vscode theme
-- terminal
-  - has strange ?
-  - option backspace / option cursor to navigate
+- install menlo font for iterm? https://www.cufonfonts.com/font/menlo

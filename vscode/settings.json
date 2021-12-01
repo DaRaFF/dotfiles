@@ -1,4 +1,7 @@
-// Check defaultSettings.json if you want to see the default
+// settings.json (this file)
+//   vscode -> preferences: open settings (ui or json) to see this file
+// defaultSettings.json (not this file)
+//   vscode -> preferences: open default settings (json)
 {
     "workbench.colorTheme": "One Dark Pro",
     "editor.minimap.enabled": false,
@@ -6,6 +9,7 @@
     "editor.renderIndentGuides": true,
     // number of spaces for a tab
     "editor.tabSize": 2,
+    "editor.fontSize": 13,
     // insert spaces when pressing tab
     "editor.insertSpaces": true,
     "workbench.sideBar.location": "left",
@@ -36,5 +40,5 @@
         "yaml": true,
         "plaintext": false,
         "markdown": false
-    }, // default false
+    }
 }
