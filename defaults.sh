@@ -35,5 +35,8 @@ defaults write -g KeyRepeat -int 2
 echo "Add a context menu item for showing the Web Inspector in web views"
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+echo "Repeats its characters on hold down a key (key repeater)"
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
 echo "Kill affected applications"
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
