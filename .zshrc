@@ -33,24 +33,24 @@ alias goldf='cd ~/dev/livingdocs/livingdocs-framework;'
 alias goldse='cd ~/dev/livingdocs/livingdocs-service-editor;'
 alias goldss='cd ~/dev/livingdocs/livingdocs-service-server;'
 # nzz
-alias gonzze='cd ~/nzz/livingdocs-editor;'
-alias gonzzs='cd ~/nzz/livingdocs-api;'
+alias gonzze='cd ~/dev/nzz/livingdocs-editor;'
+alias gonzzs='cd ~/dev/nzz/livingdocs-api;'
 # bluewin
-alias gobe='cd ~/bluewin/livingdocs-bluewin-editor;'
-alias gobs='cd ~/bluewin/livingdocs-bluewin-server;'
-alias gobd='cd ~/bluewin/livingdocs-bluewin-delivery;'
-alias goba='cd ~/bluewin/livingdocs-bluewin-ansible;'
-alias gosctvdelivery='cd ~/dev/livingdocs/livingdocs-swisscom-tv-delivery;'
-alias gosctvdesign='cd ~/bluewin/livingdocs-design-swisscom-tv;'
+alias gobe='cd ~/dev/bluewin/livingdocs-bluewin-editor;'
+alias gobs='cd ~/dev/bluewin/livingdocs-bluewin-server;'
+alias gobd='cd ~/dev/bluewin/livingdocs-bluewin-delivery;'
+alias goba='cd ~/dev/bluewin/livingdocs-bluewin-ansible;'
+alias gosctvdelivery='cd ~/dev/dev/livingdocs/livingdocs-swisscom-tv-delivery;'
+alias gosctvdesign='cd ~/dev/bluewin/livingdocs-design-swisscom-tv;'
 # blz
-alias goblze='cd ~/blz/livingdocs-editor-blz;'
-alias goblzs='cd ~/blz/livingdocs-server-blz;'
-alias goblzd='cd ~/blz/delivery-blz;'
+alias goblze='cd ~/dev/blz/livingdocs-editor-blz;'
+alias goblzs='cd ~/dev/blz/livingdocs-server-blz;'
+alias goblzd='cd ~/dev/blz/delivery-blz;'
 # dumont
-alias gode='cd ~/dumont/dumont-editor;'
-alias gods='cd ~/dumont/dumont-server;'
+alias gode='cd ~/dev/dumont/dumont-editor;'
+alias gods='cd ~/dev/dumont/dumont-server;'
 # swisscom chch
-alias goldch='cd ~/swisscom/livingdocs;'
+alias goldch='cd ~/dev/swisscom/livingdocs;'
 # dotfiles
 alias godot='cd ~/dev/daraff/dotfiles'
 ######################
