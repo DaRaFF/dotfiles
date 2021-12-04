@@ -38,5 +38,8 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 echo "Repeats its characters on hold down a key (key repeater)"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+echo "Disable automatic spelling correction"
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+
 echo "Kill affected applications"
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
