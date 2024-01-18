@@ -50,8 +50,8 @@ alias goblze='cd ~/dev/blz/livingdocs-editor-blz;'
 alias goblzs='cd ~/dev/blz/livingdocs-server-blz;'
 alias goblzd='cd ~/dev/blz/delivery-blz;'
 # dumont
-alias gode='cd ~/dev/dumont/dumont-editor;'
-alias gods='cd ~/dev/dumont/dumont-server;'
+alias gode='cd ~/dev/dumont/livingdocs/editor;'
+alias gods='cd ~/dev/dumont/livingdocs/server;'
 # swisscom chch
 alias gose='cd ~/dev/swisscom/editor;'
 alias goss='cd ~/dev/swisscom/server;'
