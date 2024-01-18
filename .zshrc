@@ -10,6 +10,9 @@ export PATH=${PATH}:./node_modules/.bin # use node binaries
 export ENVIRONMENT=local
 export NODE_ENV=local
 
+########### DirEnv ########################
+eval "$(direnv hook zsh)" #
+
 ############ Antigen ####################
 # Load Antigen
 source /opt/homebrew/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
