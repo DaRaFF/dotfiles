@@ -42,6 +42,12 @@ code --install-extension redhat.vscode-yaml
 # theme - "one dark pro" (Atom‘s iconic One Dark theme for Visual Studio Code)
 code --install-extension zhuangtongfa.material-theme
 
+# draw.io
+code --install-extension hediet.vscode-drawio
+
+# markdown table
+code --install-extension TakumiI.markdowntable
+
 # code --install-extension ms-azuretools.vscode-docker
 # code --install-extension GrapeCity.gc-excelviewer
 # code --install-extension felixfbecker.php-debug

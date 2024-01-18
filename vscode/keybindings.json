@@ -57,5 +57,17 @@
     {
         "key": "cmd+k cmd+b",
         "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+y",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "shift+cmd+y",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "cmd+m",
+        "command": "editor.action.inlineSuggest.showNext"
     }
 ]

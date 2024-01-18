@@ -6,7 +6,6 @@
     "workbench.colorTheme": "One Dark Pro",
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
-    "editor.renderIndentGuides": true,
     // number of spaces for a tab
     "editor.tabSize": 2,
     "editor.fontSize": 13,
@@ -16,10 +15,10 @@
     "editor.renderControlCharacters": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "timeline.excludeSources": [],
     "markdown.extension.toc.updateOnSave": false,
     "markdown.extension.toc.levels": "1..2",
     "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.scrollback": 1000000,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
     "redhat.telemetry.enabled": true,
@@ -29,7 +28,6 @@
     // implicit check param types in methods defined by JSDoc
     "js/ts.implicitProjectConfig.checkJs": false,
     "tabnine.experimentalAutoImports": true,
-    "workbench.activityBar.visible": false,
     "vs-kubernetes": {
         "vscode-kubernetes.minikube-path.mac": "/Users/DaRaFF/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
@@ -37,8 +35,20 @@
     "security.workspace.trust.untrustedFiles": "open",
     "github.copilot.enable": {
         "*": true,
-        "yaml": true,
         "plaintext": false,
-        "markdown": false
-    }
+        "markdown": false,
+        "scminput": false,
+        "yaml": true
+    },
+    "editor.guides.indentation": true,
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": -1,
+    "arduino.useArduinoCli": true,
+	"search.exclude": {
+		"**/bower_components": true,
+		"**/*.code-search": true
+    },
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.inlineSuggest.showToolbar": "always",
+    "githubPullRequests.pullBranch": "never"
 }

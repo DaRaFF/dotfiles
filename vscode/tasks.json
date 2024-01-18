@@ -6,7 +6,10 @@
     {
       "label": "run current file",
       "type": "shell",
-      "command": "node ${file}"
+      "command": "node ${file}",
+      "problemMatcher": [
+        "$tsc"
+      ]
     }
   ]
 }
