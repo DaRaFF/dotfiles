@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# To get a list of installed extensions, run:
+# code --list-extensions
+
 # arduino
 code --install-extension vsciot-vscode.vscode-arduino
 
@@ -47,6 +50,12 @@ code --install-extension hediet.vscode-drawio
 
 # markdown table
 code --install-extension TakumiI.markdowntable
+
+# sops
+code --install-extension signageos.signageos-vscode-sops
+
+# dotenv
+code --install-extension mikestead.dotenv
 
 # code --install-extension ms-azuretools.vscode-docker
 # code --install-extension GrapeCity.gc-excelviewer
