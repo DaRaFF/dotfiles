@@ -32,6 +32,9 @@ antigen init ~/.antigenrc
 alias golde='cd ~/dev/livingdocs/livingdocs-editor;'
 alias golds='cd ~/dev/livingdocs/livingdocs-server;'
 alias goldf='cd ~/dev/livingdocs/livingdocs-framework;'
+# customer-solutions
+alias gocs='cd ~/dev/livingdocs/customer-solutions;'
+alias goldcs='cd ~/dev/livingdocs/customer-solutions;'
 # service
 alias goldse='cd ~/dev/livingdocs/livingdocs-service-editor;'
 alias goldss='cd ~/dev/livingdocs/livingdocs-service-server;'
@@ -55,6 +58,10 @@ alias gods='cd ~/dev/dumont/livingdocs/server;'
 # swisscom chch
 alias gose='cd ~/dev/swisscom/editor;'
 alias goss='cd ~/dev/swisscom/server;'
+# 20mins
+alias go20min='cd ~/dev/20mins/20mins;'
+alias go20mine='cd ~/dev/20mins/20mins/editor;'
+alias go20mins='cd ~/dev/20mins/20mins/server;'
 # dotfiles
 alias godot='cd ~/dev/daraff/dotfiles'
 ######################
@@ -100,13 +107,24 @@ if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/google-
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
 
+###################### fnm ######################
+# fnm alternative to nvm
+# auto switches to the right node version when going to a directory with a .nvmrc file
+# place this after nvm initialization!
+alias nvm=fnm
+
+eval "$(fnm env)"
+
+autoload -U add-zsh-hook
+_fnm_autoload_hook () {
+  if [[ -f .node-version && -r .node-version ]]; then
+    fnm use --silent-if-unchanged
+  elif [[ -f .nvmrc && -r .nvmrc ]]; then
+    fnm use --silent-if-unchanged
+  fi
+}
+add-zsh-hook chpwd _fnm_autoload_hook && _fnm_autoload_hook
 
 
 
 
-########### What is that? ##########################
-export NVM_SYMLINK_CURRENT=true
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-setopt no_share_history
