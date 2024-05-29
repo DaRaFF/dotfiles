@@ -32,14 +32,6 @@
         "command": "-workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "shift+cmd+t",
-        "command": "workbench.action.terminal.new"
-    },
-    {
-        "key": "shift+alt+t",
-        "command": "workbench.action.terminal.kill"
-    },
-    {
         "key": "ctrl+cmd+up",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus"
@@ -69,5 +61,27 @@
     {
         "key": "cmd+m",
         "command": "editor.action.inlineSuggest.showNext"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "shift+alt+t",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "workbench.action.terminal.focusAtIndex1"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+cmd+left",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
     }
 ]

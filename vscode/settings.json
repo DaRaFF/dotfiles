@@ -22,7 +22,6 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
     "redhat.telemetry.enabled": true,
-    "editor.multiCursorModifier": "ctrlCmd",
     "editor.tabCompletion": "on",
     "javascript.suggest.completeFunctionCalls": true,
     // implicit check param types in methods defined by JSDoc
@@ -42,7 +41,6 @@
     },
     "editor.guides.indentation": true,
     "workbench.editor.enablePreview": false,
-    "window.zoomLevel": -1,
     "arduino.useArduinoCli": true,
 	"search.exclude": {
 		"**/bower_components": true,
@@ -50,5 +48,8 @@
     },
     "editor.inlineSuggest.suppressSuggestions": true,
     "editor.inlineSuggest.showToolbar": "always",
-    "githubPullRequests.pullBranch": "never"
+    "githubPullRequests.pullBranch": "never",
+    "window.zoomLevel": -1,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "editor.multiCursorModifier": "ctrlCmd"
 }
