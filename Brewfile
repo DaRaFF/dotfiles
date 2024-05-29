@@ -21,8 +21,10 @@ brew "exiftool"
 brew "figlet"
 brew "fluxcd/tap/flux"
 brew "ffmpeg"
+brew "fnm" # faster alternative to nvm
 # brew "freeciv"
 # brew "ghostscript"
+brew "gh" # github cli
 brew "git"
 brew "git-filter-repo"
 brew "gnu-tar"
