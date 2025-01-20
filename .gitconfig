@@ -40,6 +40,9 @@
     # force push changes of the current branch to remove
     pushf = !git push origin $(git symbolic-ref --short HEAD) --force
 
+    # easier to read log format
+	l = "log --pretty=format:'%C(#cccc00)%h %Cred%ad %Creset%<(60,trunc)%s%C(auto)%d %C(magenta)%<(15,trunc)%an' --date=format:'%y%m%d'"
+
 [credential]
   helper = osxkeychain
 
