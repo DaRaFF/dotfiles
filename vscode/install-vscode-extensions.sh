@@ -57,6 +57,13 @@ code --install-extension signageos.signageos-vscode-sops
 # dotenv
 code --install-extension mikestead.dotenv
 
+# Rest client
+code --install-extension humao.rest-client
+
+# .editorconfig
+code --install-extension editorconfig.editorconfig
+
+
 # code --install-extension ms-azuretools.vscode-docker
 # code --install-extension GrapeCity.gc-excelviewer
 # code --install-extension felixfbecker.php-debug
