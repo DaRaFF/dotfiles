@@ -8,8 +8,12 @@ tap "homebrew/core"
 tap "homebrew/services"
 # brew "python@3.9"
 # brew "autossh"
+brew "Azure/kubelogin/kubelogin" # OpenID Connect authentication plugin for kubectl
+brew "age" # file encryption
 brew "antigen"
 brew "artillery"
+brew "azcopy" # azure storage copy cli
+brew "azure-cli"
 # brew "coreutils"
 # brew "ctags"
 brew "curl"
