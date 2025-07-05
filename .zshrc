@@ -5,6 +5,7 @@ export PATH=${PATH}:~/.nvm/current/bin
 export PATH=${PATH}:/opt/local/bin
 export PATH=${PATH}:/opt/homebrew/bin
 export PATH=${PATH}:./node_modules/.bin # use node binaries
+export PATH=${PATH}:$HOME/.docker/cli-plugins # docker plugins like docker-compose
 
 ########### NODE ##########################
 export ENVIRONMENT=local
@@ -29,39 +30,66 @@ antigen init ~/.antigenrc
 
 ########### GOTO Commands ###########
 # upstream
-alias golde='cd ~/dev/livingdocs/livingdocs-editor;'
-alias golds='cd ~/dev/livingdocs/livingdocs-server;'
-alias goldf='cd ~/dev/livingdocs/livingdocs-framework;'
+alias goe='cd ~/dev/li/upstream/livingdocs-editor;'
+alias gos='cd ~/dev/li/upstream/livingdocs-server;'
+alias gof='cd ~/dev/li/upstream/livingdocs-framework;'
 # customer-solutions
-alias gocs='cd ~/dev/livingdocs/customer-solutions;'
-alias goldcs='cd ~/dev/livingdocs/customer-solutions;'
-# service
-alias goldse='cd ~/dev/livingdocs/livingdocs-service-editor;'
-alias goldss='cd ~/dev/livingdocs/livingdocs-service-server;'
-# nzz
-alias gonzze='cd ~/dev/nzz/livingdocs-editor;'
-alias gonzzs='cd ~/dev/nzz/livingdocs-api;'
-# bluewin
-alias gobe='cd ~/dev/bluewin/livingdocs-bluewin-editor;'
-alias gobs='cd ~/dev/bluewin/livingdocs-bluewin-server;'
-alias gobd='cd ~/dev/bluewin/livingdocs-bluewin-delivery;'
-alias goba='cd ~/dev/bluewin/livingdocs-bluewin-ansible;'
-alias gosctvdelivery='cd ~/dev/dev/livingdocs/livingdocs-swisscom-tv-delivery;'
-alias gosctvdesign='cd ~/dev/bluewin/livingdocs-design-swisscom-tv;'
-# blz
-alias goblze='cd ~/dev/blz/livingdocs-editor-blz;'
-alias goblzs='cd ~/dev/blz/livingdocs-server-blz;'
-alias goblzd='cd ~/dev/blz/delivery-blz;'
-# dumont
-alias gode='cd ~/dev/dumont/livingdocs/editor;'
-alias gods='cd ~/dev/dumont/livingdocs/server;'
-# swisscom chch
-alias gose='cd ~/dev/swisscom/editor;'
-alias goss='cd ~/dev/swisscom/server;'
-# 20mins
-alias go20min='cd ~/dev/20mins/20mins;'
-alias go20mine='cd ~/dev/20mins/20mins/editor;'
-alias go20mins='cd ~/dev/20mins/20mins/server;'
+alias gocso='cd ~/dev/li/customer-solutions;'
+# msp 20mins
+alias go20min='cd ~/dev/li/msp/downstream/livingdocs-20mins;'
+alias go20mine='cd ~/dev/li/msp/downstream/livingdocs-20mins/editor;'
+alias go20mins='cd ~/dev/li/msp/downstream/livingdocs-20mins/server;'
+alias go20mind='cd ~/dev/li/msp/downstream/livingdocs-20mins/server/packages/design;'
+# msp bluewin
+alias gobluewin='cd ~/dev/li/msp/downstream/livingdocs-bluewin;'
+alias gobluewine='cd ~/dev/li/msp/downstream/livingdocs-bluewin/editor;'
+alias gobluewins='cd ~/dev/li/msp/downstream/livingdocs-bluewin/server;'
+alias gobluewind='cd ~/dev/li/msp/downstream/livingdocs-bluewin/server/packages/design;'
+# msp blz
+alias goblz='cd ~/dev/li/msp/downstream/livingdocs-blz;'
+alias goblze='cd ~/dev/li/msp/downstream/livingdocs-blz/editor;'
+alias goblzs='cd ~/dev/li/msp/downstream/livingdocs-blz/server;'
+alias goblzd='cd ~/dev/li/msp/downstream/livingdocs-blz/server/packages/design;'
+# msp chmedia
+alias gochmedia='cd ~/dev/li/msp/downstream/livingdocs-chmedia;'
+alias gochmediae='cd ~/dev/li/msp/downstream/livingdocs-chmedia/editor;'
+alias gochmedias='cd ~/dev/li/msp/downstream/livingdocs-chmedia/server;'
+alias gochmediad='cd ~/dev/li/msp/downstream/livingdocs-chmedia/server/packages/design;'
+# msp demo
+alias godemo='cd ~/dev/li/msp/downstream/livingdocs-demo;'
+alias godemoe='cd ~/dev/li/msp/downstream/livingdocs-demo/editor;'
+alias godemos='cd ~/dev/li/msp/downstream/livingdocs-demo/server;'
+alias godemod='cd ~/dev/li/msp/downstream/livingdocs-demo/server/packages/design;'
+# msp dfv
+alias godfv='cd ~/dev/li/msp/downstream/livingdocs-dfv;'
+alias godfve='cd ~/dev/li/msp/downstream/livingdocs-dfv/editor;'
+alias godfvs='cd ~/dev/li/msp/downstream/livingdocs-dfv/server;'
+alias godfvd='cd ~/dev/li/msp/downstream/livingdocs-dfv/server/packages/design;'
+# msp faz
+alias gofaz='cd ~/dev/li/msp/downstream/livingdocs-faz;'
+alias gofaze='cd ~/dev/li/msp/downstream/livingdocs-faz/editor;'
+alias gofazs='cd ~/dev/li/msp/downstream/livingdocs-faz/server;'
+alias gofazd='cd ~/dev/li/msp/downstream/livingdocs-faz/server/packages/design;'
+# msp handelsblatt
+alias gohmg='cd ~/dev/li/msp/downstream/livingdocs-handelsblatt;'
+alias gohmge='cd ~/dev/li/msp/downstream/livingdocs-handelsblatt/editor;'
+alias gohmgs='cd ~/dev/li/msp/downstream/livingdocs-handelsblatt/server;'
+alias gohmgd='cd ~/dev/li/msp/downstream/livingdocs-handelsblatt/server/packages/design;'
+# msp npg
+alias gonpg='cd ~/dev/li/msp/downstream/livingdocs-npg;'
+alias gonpge='cd ~/dev/li/msp/downstream/livingdocs-npg/editor;'
+alias gonpgs='cd ~/dev/li/msp/downstream/livingdocs-npg/server;'
+alias gonpgd='cd ~/dev/li/msp/downstream/livingdocs-npg/server/packages/design;'
+# msp nzz
+alias gonzz='cd ~/dev/li/msp/downstream/livingdocs-nzz;'
+alias gonzze='cd ~/dev/li/msp/downstream/livingdocs-nzz/editor;'
+alias gonzzs='cd ~/dev/li/msp/downstream/livingdocs-nzz/server;'
+alias gonzzd='cd ~/dev/li/msp/downstream/livingdocs-nzz/server/packages/design;'
+# msp sz
+alias gosz='cd ~/dev/li/msp/downstream/livingdocs-sz;'
+alias gosze='cd ~/dev/li/msp/downstream/livingdocs-sz/editor;'
+alias goszs='cd ~/dev/li/msp/downstream/livingdocs-sz/server;'
+alias goszd='cd ~/dev/li/msp/downstream/livingdocs-sz/server/packages/design;'
 # dotfiles
 alias godot='cd ~/dev/daraff/dotfiles'
 ######################
