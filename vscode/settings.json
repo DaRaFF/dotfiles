@@ -1,55 +1,128 @@
 // settings.json (this file)
-//   vscode -> preferences: open settings (ui or json) to see this file
+//   cmd-shift-P -> "Preferences: Open User Settings" (UI or JSON) to see this file
 // defaultSettings.json (not this file)
-//   vscode -> preferences: open default settings (json)
+//   cmd-shift-P -> "Preferences: Open Default Settings" (JSON)
 {
-    "workbench.colorTheme": "One Dark Pro",
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "all",
-    // number of spaces for a tab
-    "editor.tabSize": 2,
-    "editor.fontSize": 13,
-    // insert spaces when pressing tab
-    "editor.insertSpaces": true,
-    "workbench.sideBar.location": "left",
-    "editor.renderControlCharacters": true,
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
-    "markdown.extension.toc.updateOnSave": false,
-    "markdown.extension.toc.levels": "1..2",
-    "terminal.integrated.tabs.enabled": true,
-    "terminal.integrated.scrollback": 1000000,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "explorer.confirmDragAndDrop": false,
-    "redhat.telemetry.enabled": true,
-    "editor.tabCompletion": "on",
-    "javascript.suggest.completeFunctionCalls": true,
-    // implicit check param types in methods defined by JSDoc
-    "js/ts.implicitProjectConfig.checkJs": false,
-    "tabnine.experimentalAutoImports": true,
-    "vs-kubernetes": {
-        "vscode-kubernetes.minikube-path.mac": "/Users/DaRaFF/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    "editor.inlineSuggest.enabled": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "yaml": true
-    },
-    "editor.guides.indentation": true,
-    "workbench.editor.enablePreview": false,
-    "arduino.useArduinoCli": true,
-	"search.exclude": {
-		"**/bower_components": true,
-		"**/*.code-search": true
-    },
-    "editor.inlineSuggest.suppressSuggestions": true,
-    "editor.inlineSuggest.showToolbar": "always",
-    "githubPullRequests.pullBranch": "never",
-    "window.zoomLevel": -1,
-    "github.copilot.editor.enableAutoCompletions": true,
-    "editor.multiCursorModifier": "ctrlCmd"
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  // number of spaces for a tab
+  "editor.tabSize": 2,
+  "editor.fontSize": 13,
+  // insert spaces when pressing tab
+  "editor.insertSpaces": true,
+  "workbench.sideBar.location": "left",
+  "editor.renderControlCharacters": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "markdown.extension.toc.updateOnSave": false,
+  "markdown.extension.toc.levels": "1..2",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.scrollback": 1000000,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "redhat.telemetry.enabled": true,
+  "editor.tabCompletion": "on",
+  "javascript.suggest.completeFunctionCalls": true,
+  // implicit check param types in methods defined by JSDoc
+  "js/ts.implicitProjectConfig.checkJs": false,
+  "tabnine.experimentalAutoImports": true,
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/DaRaFF/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true
+  },
+  "editor.guides.indentation": true,
+  "workbench.editor.enablePreview": false,
+  "arduino.useArduinoCli": true,
+  "search.exclude": {
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.inlineSuggest.showToolbar": "always",
+  "githubPullRequests.pullBranch": "never",
+  "window.zoomLevel": -1,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit" // fix all eslint errors on save
+  },
+  "editor.formatOnSave": true,
+  // I want to prevent that in package.json the last line gets deleted.
+  // I don't understand why this happens.
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  // I want to prevent that .drone.yml reformats on save
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "javascript.format.enable": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // add global configuration for debugging
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      // ...
+    ]
+  },
+  "git.openRepositoryInParentFolders": "never",
+  // When ctrl click on a function (e.g. from the LI server in node_modules), it will open the file also in the file explorer in the sidebar
+  "explorer.autoRevealExclude": {
+    "**/node_modules": false
+  },
+  "workbench.colorTheme": "One Dark Pro",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.agent.enabled": true,
+  // Removed duplicate key
+  "github.copilot.advanced": {
+    "agentMode": true
+  },
+  "mcp": {
+    "inputs": [],
+    "servers": {
+      "filesystem": {
+        "type": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/Users/daraff"
+        ]
+      },
+      "time": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "mcp/time"
+        ]
+      },
+      "context7": {
+        "type": "http",
+        "url": "https://mcp.context7.com/mcp"
+      },
+      "memory": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-memory"
+        ],
+        "env": {
+          "MEMORY_PERSIST": "true",
+          "MEMORY_FILE_PATH": "/Users/daraff/mcp-memory.json"
+        }
+      },
+    }
+  },
+  "diffEditor.maxComputationTime": 0
 }
