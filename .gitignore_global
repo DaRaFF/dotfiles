@@ -45,3 +45,5 @@ tags
 .yardoc/
 todo.txt
 node_modules/
+.decrypted~*.secret.enc.yaml
+.decrypted~*.secret.enc.yaml
