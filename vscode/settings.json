@@ -86,43 +86,14 @@
   "github.copilot.advanced": {
     "agentMode": true
   },
-  "mcp": {
-    "inputs": [],
-    "servers": {
-      "filesystem": {
-        "type": "stdio",
-        "command": "npx",
-        "args": [
-          "-y",
-          "@modelcontextprotocol/server-filesystem",
-          "/Users/daraff"
-        ]
-      },
-      "time": {
-        "command": "docker",
-        "args": [
-          "run",
-          "-i",
-          "--rm",
-          "mcp/time"
-        ]
-      },
-      "context7": {
-        "type": "http",
-        "url": "https://mcp.context7.com/mcp"
-      },
-      "memory": {
-        "command": "npx",
-        "args": [
-          "-y",
-          "@modelcontextprotocol/server-memory"
-        ],
-        "env": {
-          "MEMORY_PERSIST": "true",
-          "MEMORY_FILE_PATH": "/Users/daraff/mcp-memory.json"
-        }
-      },
-    }
+  "diffEditor.maxComputationTime": 0,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "diffEditor.maxComputationTime": 0
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }

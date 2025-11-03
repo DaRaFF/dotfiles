@@ -67,6 +67,10 @@
 
 [url "https://"]
 	insteadOf = git://
-    
+
 [pull]
 	rebase = true
+
+# .gitattributes must specificy "sopsdiffer" driver for this to work
+[diff "sopsdiffer"]
+    textconv = sops -d

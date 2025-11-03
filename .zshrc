@@ -90,6 +90,11 @@ alias gosz='cd ~/dev/li/msp/downstream/livingdocs-sz;'
 alias gosze='cd ~/dev/li/msp/downstream/livingdocs-sz/editor;'
 alias goszs='cd ~/dev/li/msp/downstream/livingdocs-sz/server;'
 alias goszd='cd ~/dev/li/msp/downstream/livingdocs-sz/server/packages/design;'
+# msp nrk
+alias gonrk='cd ~/dev/li/msp/downstream/livingdocs-nrk;'
+alias gonrke='cd ~/dev/li/msp/downstream/livingdocs-nrk/editor;'
+alias gonrks='cd ~/dev/li/msp/downstream/livingdocs-nrk/server;'
+alias gonrkd='cd ~/dev/li/msp/downstream/livingdocs-nrk/server/packages/design;'
 # dotfiles
 alias godot='cd ~/dev/daraff/dotfiles'
 ######################
@@ -99,11 +104,10 @@ alias godot='cd ~/dev/daraff/dotfiles'
 
 
 ########### Aliases ###########
-# alias ssh='~/livingdocs/infrastructure/ssh'
 alias v='code .'
-# alias redis-cli='docker run -it --network="host" --rm redis redis-cli'
-# unalias pbcopy
-# unalias pbpaste
+alias s='npm run start'
+alias w='npm run watch'
+alias t='npm run test'
 ######################
 
 
@@ -152,6 +156,11 @@ _fnm_autoload_hook () {
   fi
 }
 add-zsh-hook chpwd _fnm_autoload_hook && _fnm_autoload_hook
+
+###################################################################
+########### Root HTTPS Certificate for LI MSPs ##########################
+export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
+######################
 
 
 
